@@ -32,7 +32,27 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.feature-card, .step, .stat').forEach(el => {
+document.querySelectorAll('.feature-card, .step, .stat, .val-card').forEach(el => {
   el.classList.add('fade-item');
   observer.observe(el);
 });
+
+// FORM SIMULATION
+const contactForm = document.getElementById('contact-form');
+const formSuccess = document.getElementById('form-success');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const submitBtn = contactForm.querySelector('.btn-submit');
+    submitBtn.classList.add('loading');
+    submitBtn.disabled = true;
+
+    // Simulate API call
+    setTimeout(() => {
+      contactForm.classList.add('hidden');
+      formSuccess.classList.remove('hidden');
+    }, 1500);
+  });
+}

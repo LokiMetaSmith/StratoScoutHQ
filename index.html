@@ -36,7 +36,7 @@
         <a href="#problem">Problem</a>
         <a href="#solution">Solution</a>
         <a href="#how">How It Works</a>
-        <a href="mailto:hello@stratoscouthq.com" class="btn btn-outline">Get in Touch</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </nav>
     </div>
   </header>
@@ -48,7 +48,7 @@
       <h1>Up-to-date geospatial intelligence to help emergency managers with wildfire planning, response, and prevention.</h1>
       <p class="hero-sub">StratoScout high-altitude drones scan large areas before and during high-risk conditions, turning vegetation, heat, and terrain data into clear maps and insights emergency teams can act on.</p>
       <div class="hero-ctas">
-        <a href="mailto:hello@stratoscouthq.com" class="btn btn-primary">Get in Touch</a>
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
         <a href="#problem" class="btn btn-ghost">Learn More ↓</a>
       </div>
     </div>
@@ -179,13 +179,90 @@
     </div>
   </section>
 
+  <!-- DEMO -->
+  <section class="section demo" id="demo">
+    <div class="container two-col reverse">
+      <div class="col-text">
+        <p class="eyebrow red">See It In Action</p>
+        <h2>Built for the reality of incident command.</h2>
+        <p>
+          We've built our platform from the ground up for incident commanders and emergency management teams. The interface delivers what matters most: actionable geospatial intelligence, rapid updates, and clear risk indicators.
+        </p>
+        <ul class="checklist">
+          <li><strong>Live Risk Mapping:</strong> Instantly view active hot spots and spread trajectories.</li>
+          <li><strong>Terrain Analysis:</strong> Overlay topographical data for resource placement.</li>
+          <li><strong>Priority Alerts:</strong> AI-flagged critical areas needing immediate attention.</li>
+        </ul>
+      </div>
+      <div class="col-image">
+        <img
+          src="https://sspark.genspark.ai/cfimages?u1=qQd73Yn9K%2F%2B28Bf8eY2fI%2B4tF9P2H2Kq2K4aB0yR567T96G%2B1T7%2B2n48xNnO9XN4bTq25t1q1Jv54X18XmZk1b9q&u2=2Y2y4c3n3L&width=2560"
+          alt="Emergency manager reviewing data"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- VALIDATION STRIP -->
+  <section class="section validation" id="validation">
+    <div class="container">
+      <div class="val-cards">
+        <div class="val-card fade-item">
+          <h4>NWS Tulsa Partnership</h4>
+          <p>Collaborating to enhance predictive models with high-altitude data.</p>
+        </div>
+        <div class="val-card fade-item">
+          <h4>Built for County EMs</h4>
+          <p>Designed with direct feedback from Oklahoma emergency managers.</p>
+        </div>
+        <div class="val-card fade-item">
+          <h4>Aerospace Expertise</h4>
+          <p>Developed by a team with extensive UAS and engineering backgrounds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA BAND -->
   <section class="section cta-band" id="contact">
     <div class="container cta-band-inner">
       <h2>Is this for you? Let's talk.</h2>
       <p>We work directly with emergency management offices. Reach out and we'll take it from there.</p>
-      <a href="mailto:hello@stratoscouthq.com" class="btn btn-primary">Get in Touch</a>
-      <p class="cta-email">hello@stratoscouthq.com</p>
+
+      <div class="form-container">
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="org">Organization / Agency</label>
+            <input type="text" id="org" name="org" required />
+          </div>
+          <div class="form-group">
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loader"></span>
+          </button>
+        </form>
+
+        <div id="form-success" class="form-success hidden">
+          <div class="success-icon">✓</div>
+          <h3>Message Received</h3>
+          <p>Thanks for reaching out. A member of the StratoScout team will be in touch shortly.</p>
+        </div>
+      </div>
+
+      <p class="cta-email">Or email us directly at: <a href="mailto:hello@stratoscouthq.com">hello@stratoscouthq.com</a></p>
     </div>
   </section>
 
